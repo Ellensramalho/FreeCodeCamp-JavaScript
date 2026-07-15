@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main class="weather-app">
+      <section class="weather-card">
+        <header class="weather-header">
+          <p class="subtitle">Weather forecast</p>
+          <h1>How is the weather?</h1>
+        </header>
+
+        <div class="weather-controls">
+          <label for="city-select">Choose a city:</label>
+
+          <select id="city-select">
+            <option value=""></option>
+            <option value="new york">New York</option>
+            <option value="los angeles">Los Angeles</option>
+            <option value="chicago">Chicago</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="london">London</option>
+          </select>
+
+          <button id="get-weather-btn" type="button">
+            Get Weather
+          </button>
+        </div>
+
+        <section class="weather-information">
+          <div class="weather-highlight">
+            <img
+              id="weather-icon"
+              src=""
+              alt="Weather icon"
+            />
+
+            <div>
+              <p id="location">Select a city</p>
+              <h2 id="main-temperature">--</h2>
+              <p id="weather-main">Weather information</p>
+            </div>
+          </div>
+
+          <div class="weather-details">
+            <article class="detail-card">
+              <span>Feels like</span>
+              <strong id="feels-like">--</strong>
+            </article>
+
+            <article class="detail-card">
+              <span>Humidity</span>
+              <strong id="humidity">--</strong>
+            </article>
+
+            <article class="detail-card">
+              <span>Wind</span>
+              <strong id="wind">--</strong>
+            </article>
+
+            <article class="detail-card">
+              <span>Wind gust</span>
+              <strong id="wind-gust">--</strong>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
